@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Daisy.Models.Flower>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Create">Create New</a>
+    }
+</p>
+<form>
+    <p>
+        Flower Name: <input type="text" name="SearchString" />
+        <br />
+        <br />
+        Flower type: <!--<input type="text" name="FlowerType" />-->
+        @Html.DropDownList("FlowerType", "Select a Value")
+        <input type="submit" value="Search" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FlowerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlowerProducedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlowerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlowerProducedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem=>item.Image)" width="200" height="200" alt="img" /><br />
+                    @Html.DisplayFor(modelItem => item.Image)
+                </td>
+                @if (User.IsInRole("Admin"))
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                }
+                <td>
+                    <a asp-action="AddToCart" asp-route-id="@item.ID">Add To Cart</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

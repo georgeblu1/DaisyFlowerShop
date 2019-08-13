@@ -1,0 +1,18 @@
+﻿@model Daisy.Models.Order
+@{
+    ViewData["Title"] = "AddAddress";
+}
+
+<h2>Add Address</h2>
+
+<form asp-action="Payment">
+    <div class="form-group">
+        <div class="form-group">
+            <label asp-for="Address" class="control-label"></label>
+            <input asp-for="Address" class="form-control" id="address" name="address" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <input type="submit" class="btn btn-default" value="Make Payment" />
+    </div>
+</form>
+

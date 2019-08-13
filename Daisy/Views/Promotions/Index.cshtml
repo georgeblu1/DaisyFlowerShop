@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Promotions";
+}
+
+<script>
+    function deleteImage(item) {
+        var url = "/Promotions/DeleteImage";
+        $.post(url, { FileUri: item }, function (data) {
+            window.location.href = "/Promotions/Index";
+        });
+    }
+</script>
+
+<h2>Promotions</h2>
+<br />
+@if (User.IsInRole("Admin"))
+{
+    <div>
+        <form method="post" enctype="multipart/form-data" asp-controller="Promotions" asp-action="Post">
+            <div class="form-group">
+                <div class="col-md-10">
+                    <p>Upload Promotion Image:</p>
+                    <input type="file" name="files" />
+                </div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <input type="submit" value="Upload" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br />
+    <br />
+}
+<div class="row">
+    @if (Model != null && Model.Count > 0)
+    {
+        foreach (var item in Model)
+        {
+            <div class="imageBlock" style="padding:10px">
+                <a href="@item" target="_blank"><img class="thumb" src="@item" alt="images" style="width:280px;height:280px;" /></a><br />
+            </div>
+        }
+    }
+</div>

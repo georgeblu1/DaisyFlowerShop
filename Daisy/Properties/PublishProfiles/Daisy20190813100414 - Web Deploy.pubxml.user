@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA89bwSGW1NEeQlLvh8gaW5AAAAAACAAAAAAAQZgAAAAEAACAAAADJRmRi1AbmUM1S+MWWR9/2wIUF9TF6lpXIPybUZMVbTwAAAAAOgAAAAAIAACAAAACtiVR/UWFhtrK5NgwZpeG/fJ35RJposYp3sPR/sEjgJYAAAAAmf23VJvWgmaWVia+nf/ie67SdfKpT/G3X5UKC9X/4r4vPgE7yFgN6k05ffgKSohoWL1GcvQVj74nqxZK73wpV4CFyKLjJqn6UTMOcvbtzV9x3e6HPrIAHcVLPgWg3ZESeOPdIxWSBca9exaowmc/60ilYpbHti6LwyyrCGoicm0AAAADnW7Y/gX7jjcfit250lAahmjAIz6gVjMcGRAGUQHZ0F7WLUFKeCrv0n6I6Np3GyvIR7N63mjGGGVeSns/ds18F</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AzureStorageConnectionString-1">
+      <Value>Data Source=tcp:daisy20190813100414dbserver.database.windows.net,1433%3bInitial Catalog=Daisy20190813100414_db%3bUser Id=georgeblu1%40daisy20190813100414dbserver%3bPassword=geo426039%27%27%27</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:daisy20190813100414dbserver.database.windows.net,1433%3bInitial Catalog=Daisy20190813100414_db%3bUser Id=georgeblu1%40daisy20190813100414dbserver%3bPassword=geo426039%27%27%27</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Daisy.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:daisy20190813100414dbserver.database.windows.net,1433%3bInitial Catalog=Daisy20190813100414_db%3bUser Id=georgeblu1%40daisy20190813100414dbserver%3bPassword=geo426039%27%27%27</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

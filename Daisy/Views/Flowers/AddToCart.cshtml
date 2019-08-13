@@ -1,0 +1,59 @@
+﻿@model Daisy.Models.Flower
+@{
+    ViewData["Title"] = "AddToCart";
+}
+
+<h2>Add Flowers to Shopping Cart</h2>
+
+<div>
+    <form asp-action="AddToCart">
+        <h4>Flowers</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FlowerName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FlowerName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.FlowerProducedDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FlowerProducedDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Image)
+            </dt>
+            <dd>
+                <img src="@Html.DisplayFor(model=>model.Image)" width="200" height="200" alt="img" />
+            </dd>
+        </dl>
+        <label class="control-label">Enter the amount of Flowers to be bought.</label>
+        <input type="number" id="quantityToBuy" name="quantityToBuy" runat="server" min="1" max="@Html.DisplayFor(model => model.Quantity)" required value="1">
+        <br />
+        <input type="hidden" asp-for="ID" />
+        <div class="form-group">
+            <input type="submit" value="Add To Cart" class="btn btn-default" />
+        </div>
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

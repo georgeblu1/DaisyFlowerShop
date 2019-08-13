@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Daisy.Models.Cart>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Shopping Cart</h2>
+
+<h3>Total :</h3>
+<h3>
+    @Model.Sum(model => model.Total)
+</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FlowerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderBy)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlowerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Total)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderBy)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<form asp-action="Payment">
+    <div class="form-group">
+        @if (Model.Sum(model => model.Total) != 0)
+        {
+            <a asp-action="AddAddress">Make Payment</a>
+        }
+    </div>
+</form>
+
