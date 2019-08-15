@@ -192,7 +192,7 @@ Write(Model.Sum(model => model.Total));
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1448, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "468dfbd308b1485ebe77acd3519bb54b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fba90096d07d486595ea6762129b1178", async() => {
                 BeginContext(1496, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -227,7 +227,7 @@ Write(Model.Sum(model => model.Total));
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1531, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29ed36ffede7409ab24fae6e9d42467c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ccecc8ad232485781b06f7a8c08193d", async() => {
                 BeginContext(1578, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -270,7 +270,7 @@ Write(Model.Sum(model => model.Total));
             WriteLiteral("    </tbody>\r\n</table>\r\n");
             EndContext();
             BeginContext(1667, 209, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf805623f8a34c5caa342ebef3945702", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42452075c2cd4321a5c3b6899da4802e", async() => {
                 BeginContext(1694, 32, true);
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n");
                 EndContext();
@@ -284,7 +284,7 @@ Write(Model.Sum(model => model.Total));
                 WriteLiteral("            ");
                 EndContext();
                 BeginContext(1801, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ece96b96bb9240fe8850adc71a24d6d3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e100cdc36e24c3b97e970403cfb1e51", async() => {
                     BeginContext(1828, 12, true);
                     WriteLiteral("Make Payment");
                     EndContext();

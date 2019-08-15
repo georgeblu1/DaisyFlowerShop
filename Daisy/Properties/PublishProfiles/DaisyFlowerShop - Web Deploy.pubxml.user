@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA89bwSGW1NEeQlLvh8gaW5AAAAAACAAAAAAAQZgAAAAEAACAAAABlYgj+4DMvKptKbE602SyNgDviTfiIuBpeRJJ7k8kUqwAAAAAOgAAAAAIAACAAAABvY8dSjlOqCOugzTBW+N0FiY5NwqTozeKfTP1vwUL7Z4AAAAA17c17PY1/gAuKBEZ31BK84GfhG1eRFjXN4Zar1rFiVnDYY3rKU6JoRxDXg76Ncm65sbBI+4M35DtZSEv0TKJYktB5RaNwUBX0mW9hNmUO6q9/QncmBD5ySBw15jjofO42Dl4a3E74ko2yXq6tFnThEHNKFQqQSQ7hiZmD5kyS2kAAAAAVkShifccRf2yrtv3KYTMHoqyW+FKoqRFB//ACHtalmoQNNVpovFABJKEz5Viv+rpNOwJbZ3O/jqP94t9onv06</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AzureStorageConnectionString-2">
+      <Value>Data Source=tcp:daisyflowershopdbserver.database.windows.net,1433%3bInitial Catalog=DaisyFlowerShop_db%3bUser Id=georgeblu1%40daisyflowershopdbserver%3bPassword=Geo426039</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:daisyflowershopdbserver.database.windows.net,1433%3bInitial Catalog=DaisyFlowerShop_db%3bUser Id=georgeblu1%40daisyflowershopdbserver%3bPassword=Geo426039</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Daisy.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:daisyflowershopdbserver.database.windows.net,1433%3bInitial Catalog=DaisyFlowerShop_db%3bUser Id=georgeblu1%40daisyflowershopdbserver%3bPassword=Geo426039</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

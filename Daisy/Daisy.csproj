@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-Daisy-5417F06C-E1B2-4D2B-8B9A-3ECDD52E98E5</UserSecretsId>
-    <ApplicationInsightsResourceId>/subscriptions/f0e7ff1b-f1bc-44c2-a005-47b099c9ed87/resourcegroups/DaisyFlowersRG/providers/microsoft.insights/components/Daisy</ApplicationInsightsResourceId>
-    <ApplicationInsightsAnnotationResourceId>/subscriptions/f0e7ff1b-f1bc-44c2-a005-47b099c9ed87/resourcegroups/DaisyFlowersRG/providers/microsoft.insights/components/Daisy</ApplicationInsightsAnnotationResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/f0e7ff1b-f1bc-44c2-a005-47b099c9ed87/resourcegroups/DaisyFlowerApp/providers/microsoft.insights/components/DaisyFlowersAI</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/f0e7ff1b-f1bc-44c2-a005-47b099c9ed87/resourcegroups/DaisyFlowerApp/providers/microsoft.insights/components/DaisyFlowersAI</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>

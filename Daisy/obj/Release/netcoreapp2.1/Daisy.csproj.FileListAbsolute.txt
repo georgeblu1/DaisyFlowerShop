@@ -5,7 +5,6 @@ C:\Users\George\source\repos\Daisy\Daisy\bin\Release\netcoreapp2.1\Daisy.dll
 C:\Users\George\source\repos\Daisy\Daisy\bin\Release\netcoreapp2.1\Daisy.pdb
 C:\Users\George\source\repos\Daisy\Daisy\bin\Release\netcoreapp2.1\Daisy.Views.dll
 C:\Users\George\source\repos\Daisy\Daisy\bin\Release\netcoreapp2.1\Daisy.Views.pdb
-C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.csprojAssemblyReference.cache
 C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.csproj.CoreCompileInputs.cache
 C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.RazorAssemblyInfo.cache
 C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.RazorAssemblyInfo.cs
@@ -51,3 +50,4 @@ C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.Views.p
 C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.dll
 C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.pdb
 C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.csproj.CopyComplete
+C:\Users\George\source\repos\Daisy\Daisy\obj\Release\netcoreapp2.1\Daisy.csprojAssemblyReference.cache
